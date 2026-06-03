@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TaskBoard</title>
+</head>
+<body>
+
+    <main class="app">
+        <header class="header">
+            <img src="assets/Logo.png" alt="Logo TaksFlow">
+            <div>
+                <h1>TaskFBoard</h1>
+                <p>organize seuas tarefas com foco e produtividade</p>
+            </div>
+        </header>
+        
+        <section class="task-form">
+            <input type="text" id="taskInput" placehorder="Digite uma nova tarefa...">
+            <button id="addTaskBtn">Adicionar</button>
+        </section>
+
+        <section class="task-info">
+            <p id="taskList">0 tarefas cadastradas</p>
+        </section>
+
+        <ul id="taskCounter" class="task-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
