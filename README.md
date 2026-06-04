@@ -1,6 +1,6 @@
-# 🚀 TaskFBoard
+# 🚀 TaskFlow
 
-TaskFBoard é uma aplicação web desenvolvida para gerenciamento de tarefas diárias, permitindo organizar atividades de forma simples, rápida e eficiente.
+TaskFlow é uma aplicação web desenvolvida para gerenciamento de tarefas diárias, permitindo organizar atividades de forma simples, rápida e eficiente.
 
 O projeto foi criado com foco no aprendizado e prática de conceitos fundamentais do desenvolvimento Front-End, incluindo manipulação do DOM, armazenamento local de dados e criação de interfaces modernas e responsivas.
 
@@ -16,6 +16,7 @@ O projeto foi criado com foco no aprendizado e prática de conceitos fundamentai
   * Todas
   * Pendentes
   * Concluídas
+
 * 🌙 Alternar entre tema claro e escuro
 * 💾 Persistência de dados utilizando LocalStorage
 * 📱 Interface responsiva para dispositivos móveis
