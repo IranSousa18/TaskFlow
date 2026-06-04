@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/Logo.png">
+    <title>TaskFBoard</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>TaskBoard</title>
+    <link rel="icon" href="assets/logo.png">
 </head>
 <body>
 
     <main class="app">
         <header class="header">
-            <img src="assets/Logo.png" alt="Logo TaksFlow">
+            <img src="assets/logo.png" alt="Logo TaskFlow">
+
             <div>
                 <h1>TaskFBoard</h1>
-                <p>organize seuas tarefas com foco e produtividade</p>
+                <p>Organize suas tarefas com foco e produtividade</p>
             </div>
+
+            <button id="themeBtn" class="theme-btn">🌙</button>
         </header>
-        
+
         <section class="task-form">
-            <input type="text" id="taskInput" placehorder="Digite uma nova tarefa...">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Digite uma nova tarefa..."
+            >
+
             <button id="addTaskBtn">Adicionar</button>
         </section>
 
-        <section class="task-info">
-            <p id="taskList">0 tarefas cadastradas</p>
+        <section class="search-area">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Pesquisar tarefa..."
+            >
         </section>
 
-        <ul id="taskCounter" class="task-list"></ul>
+        <section class="filters">
+            <button class="filter-btn active" onclick="setFilter('all')">Todas</button>
+            <button class="filter-btn" onclick="setFilter('pending')">Pendentes</button>
+            <button class="filter-btn" onclick="setFilter('completed')">Concluídas</button>
+        </section>
+
+        <section class="task-info">
+            <p id="taskCounter">0 tarefas cadastradas</p>
+        </section>
+
+        <ul id="taskList" class="task-list"></ul>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
